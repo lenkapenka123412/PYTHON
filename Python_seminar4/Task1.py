@@ -110,16 +110,16 @@ Output: a: 5, b: 1, c: 2, d: 3'''
 
 # # Бинарный поиск или алгорим быстрой сортировки
 
-# def qick_sort(array): # создаем новый массив
-#     if len(array) <= 1: # если длинна массива меньше или равно 1(указали базис рекурсии)
-#         return array 
-#     else:
-#         pivor = array[0] # сохраняем первый элементв переменную pivor
-#     less = [i for i in array[1:] if i <= pivor] 
-#     less1 = [i for i in array[1:] if i > pivor]
-#     return qick_sort(less) + [pivor] + qick_sort(less1)
+def qick_sort(array): # создаем новый массив
+     if len(array) <= 1: # если длинна массива меньше или равно 1(указали базис рекурсии)
+         return array 
+     else:
+         pivor = array[0] # сохраняем первый элементв переменную pivor
+     less = [i for i in array[1:] if i <= pivor] 
+     less1 = [i for i in array[1:] if i > pivor]
+     return qick_sort(less) + [pivor] + qick_sort(less1)
 
-# print(qick_sort([14,2,5,56,4,5,8,3,25,3,2,3,5,5,2,5,52]))
+print(qick_sort([14,2,5,56,4,5,8,3,25,3,2,3,5,5,2,5,52]))
 
 
 
