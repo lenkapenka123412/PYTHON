@@ -1,2 +1,3 @@
-n = 5
-print(type(n))
+from modul1 import max1
+
+print(modul1.max1(5, 9))
