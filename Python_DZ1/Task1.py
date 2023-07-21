@@ -3,9 +3,16 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0) |
 
-namber = int(input("Введите трехзначное число: "))
-digit1 = namber // 100 # получаем первую цифру
-digit2 = (namber % 100) // 10 # получаем вторую цифру
-digit3 = namber % 10 # получаем третью цифру
-summ_of_digit = digit1 + digit2 + digit3
-print(summ_of_digit)
+# namber = int(input("Введите трехзначное число: "))
+# digit1 = namber // 100 # получаем первую цифру
+# digit2 = (namber % 100) // 10 # получаем вторую цифру
+# digit3 = namber % 10 # получаем третью цифру
+# summ_of_digit = digit1 + digit2 + digit3
+# print(summ_of_digit)
+
+n = 523
+
+# Введите ваше решение ниже
+
+res = (n//100) + ((n%100)//10) + n%10
+print(res)
