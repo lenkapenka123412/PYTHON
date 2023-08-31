@@ -9,20 +9,29 @@
     3
     -> 1
 """
-def count_occurrences(A, X):
-    count = 0
-    for num in A:
-        if num == X:
-            count += 1
-    return count
+# def count_occurrences(A, X):
+#     count = 0
+#     for num in A:
+#         if num == X:
+#             count += 1
+#     return count
 
 # Ввод данных
-N = int(input("Введите количество элементов в массиве: "))
-A = list(map(int, input("Введите элементы массива через пробел: ").split()))
-X = int(input("Введите число X: "))
+# N = int(input("Введите количество элементов в массиве: "))
+# A = list(map(int, input("Введите элементы массива через пробел: ").split()))
+# X = int(input("Введите число X: "))
 
-# Подсчет количества вхождений числа X
-occurrences = count_occurrences(A, X)
+# # Подсчет количества вхождений числа X
+# occurrences = count_occurrences(A, X)
 
-# Вывод результата
-print("Число X встречается", occurrences, "раз(а) в массиве A.")
+# # Вывод результата
+# print("Число X встречается", occurrences, "раз(а) в массиве A.")
+
+
+list_1 = [1, 2, 3, 4, 5]
+k = 3
+count = 0
+for i in range(list_1):
+    if list_1[i] == k:
+        count += 1
+print(count)

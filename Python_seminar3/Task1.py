@@ -11,9 +11,9 @@
 # Input: [1, 2, 3, 4, 5] k = 2
 # Output: [4, 5, 1, 2, 3]
 
-# list_1 = [1, 1, 2, 3, 3, 4, 5] # создаем список с заполенными значениями
-# list_2 = []
-# for i in list_1:
-#     if i not in list_2:
-#         list_2.append(i)
-# print(len(list_2))
+list_1 = [1, 1, 2, 3, 3, 4, 5] # создаем список с заполенными значениями
+list_2 = []
+for i in list_1:
+    if i not in list_2:
+        list_2.append(i)
+    print(len(list_2))

@@ -73,7 +73,7 @@
 # print("Output:", output_string)
 
 # Задача 27
-# input_string = input("Введите строку: ")
-# words = set(input_string.split())
+input_string = input("Введите строку: ")
+words = set(input_string.split())
 
-# print("Количество различных слов:", len(words))
+print("Количество различных слов:", len(words))
