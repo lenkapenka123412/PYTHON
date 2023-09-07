@@ -1,4 +1,4 @@
-# Задача 16
+# # Задача 16
 # N = int(input("Введите количество элементов в массиве: "))
 # A = []
 # for i in range(N):
@@ -6,7 +6,7 @@
 
 # X = int(input("Введите число X: "))
 
-# Перебираем все элементы массива A и считаем, сколько раз встречается число X
+# # Перебираем все элементы массива A и считаем, сколько раз встречается число X
 # count = 0
 # for i in range(N):
 #     if A[i] == X:
@@ -73,7 +73,7 @@
 # print("Output:", output_string)
 
 # Задача 27
-input_string = input("Введите строку: ")
-words = set(input_string.split())
+# input_string = input("Введите строку: ")
+# words = set(input_string.split())
 
-print("Количество различных слов:", len(words))
+# print("Количество различных слов:", len(words))

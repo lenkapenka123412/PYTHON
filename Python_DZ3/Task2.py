@@ -1,7 +1,7 @@
-list_1 = [1, 4, 3, 7, 8, 9, 2, 2]
+list_1 = [2, 4, 1, 6, 8, 2, 9, 3, 2, 5]
 k = 2
 count = 0
-for i in range(len(list_1)):
+for i in list_1:
     if i == k:
         count += 1
 print(count)

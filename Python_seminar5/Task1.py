@@ -204,11 +204,11 @@ Output: yes """
 # else:
 #     print('YES')
 
-def print_reverse_sequence():
-    number = int(input("Введите количество элементов: "))
-    if number > 0:
-        element = int(input("Введите элемент: "))
-        print_reverse_sequence()
-        print(element, end=" ")
+# def print_reverse_sequence():
+#     number = int(input("Введите количество элементов: "))
+#     if number > 0:
+#         element = int(input("Введите элемент: "))
+#         print_reverse_sequence()
+#         print(element, end=" ")
 
-print_reverse_sequence()
+# print_reverse_sequence()

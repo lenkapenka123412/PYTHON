@@ -3,15 +3,19 @@
  прогрессии: an = a1 + (n-1) * d.
 Каждое число вводится с новой строки."""
 
-# Ввод значений с клавиатуры
-a1 = int(input("Введите первый элемент прогрессии: "))
-d = int(input("Введите разность прогрессии: "))
-n = int(input("Введите количество элементов: "))
+from random import randint
+
+first_element = randint(1,10)
+print(f'Первый элемент прогрессии: {first_element}')
+progression_difference = randint(1,20)
+print(f'Разность прогрессии: {progression_difference}')
+count_elements = randint(1,20)
+print(f'Количество элементов прогрессии: {count_elements}')
 
 # Создание и заполнение списка элементами арифметической прогрессии
-progression = [a1 + (i-1) * d for i in range(1, n+1)]
+progression = [first_element + (i-1) * progression_difference for i in range(1, count_elements+1)]
 
 # Вывод списка на экран
 print("Массив элементов арифметической прогрессии:")
 for num in progression:
-    print(num)
+    print(num, end=", ")

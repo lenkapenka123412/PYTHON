@@ -4,20 +4,17 @@
 Пользователь вводит 2 числа. n — кол-во элементов первого множества. 
 m — кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств."""
 
-def find_common_elements():
-    # Ввод первого множества
-    n = int(input("Введите количество элементов первого множества: "))
-    set1 = set(map(int, input("Введите элементы первого множества через пробел: ").split()))
+from random import randint
 
-    # Ввод второго множества
-    m = int(input("Введите количество элементов второго множества: "))
-    set2 = set(map(int, input("Введите элементы второго множества через пробел: ").split()))
+n1 = int(input("Введите длинну списка 1: "))
+n2 = int(input("Введите длинну списка 2: "))
 
-    # Нахождение общих элементов и сортировка
-    common_elements = sorted(set1.intersection(set2))
+list_1 = [randint(1, 10) for i in range(1, n1+1)]
+set1 = set(list_1)
+print(list_1)
 
-    # Вывод результатов
-    print("Общие элементы в обоих множествах, в порядке возрастания:")
-    print(*common_elements)
+list_2 = [randint(1, 10) for j in range(1, n2+1)]
+set2 = set(list_2)
+print(list_2)
 
-find_common_elements()
+print(sorted(set1.intersection(set2)))

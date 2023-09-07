@@ -1,7 +1,7 @@
 from copy import deepcopy
 
 
-PATH = 'PYTHON_FINAL_DZ\Phonebook_2.0\phonebook.txt'
+PATH = 'Phonebook_2.0\phonebook.txt'
 phone_book = {}
 original_book = {}
 

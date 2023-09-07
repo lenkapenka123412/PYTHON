@@ -10,22 +10,5 @@
 Напишите программу для нахождения максимального числа ягод, которое может собрать 
 за один заход собирающий модуль, находясь перед некоторым кустом заданной во входном файле грядки."""
 
-def max_berry_count(berries):
-    n = len(berries)
-    max_count = 0
 
-    for i in range(n):
-        curr_count = berries[i] + berries[(i+1)%n] + berries[(i-1)%n]
-        max_count = max(max_count, curr_count)
-
-    return max_count
-
-# Ввод числа кустов и числа ягод на каждом кусте
-n = int(input("Введите количество кустов: "))
-berries = list(map(int, input("Введите количество ягод на каждом кусте через пробел: ").split()))
-
-# Нахождение максимального числа ягод
-max_berries = max_berry_count(berries)
-
-# Вывод результата
-print("Максимальное число ягод, которое может быть собрано за один заход:", max_berries)
+   
